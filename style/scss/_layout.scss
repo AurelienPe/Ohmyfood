@@ -1,3 +1,11 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -18,6 +26,25 @@ a {
   text-decoration: none;
   color: $black;
 }
+  
+.fa-heart:active {
+  background: $gradian;
+  /*essayer d'utiliser type="checkbox" dans le html*/
+}
+
+header {
+  h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Shrikhand', serif;
+    font-size: 5rem;
+  }
+}
+
+section {
+  width: 95%;
+  margin: auto;
+}
 
 footer {
   padding: 25px;
@@ -26,12 +53,18 @@ footer {
 
   h3 {
     margin: 0 0 16px;
+    font-family: 'Shrikhand', serif;
   }
 
   ul {
     display: flex;
     flex-direction: column;
     gap: 10px;
+  }
+
+  i{
+    width: 13px;
+    margin-right: 10px;
   }
 
   a {

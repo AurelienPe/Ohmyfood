@@ -1,4 +1,93 @@
-.functioning li:hover i,
-.functioning li:focus i {
-  color: $purple;
+section {
+  width: 95%;
+  margin: auto;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  background-color: $light;
+  align-items: baseline;
+  padding: 25px 0 25px 0;
+
+  input {
+    border: 0;
+    font-size: 1.2rem;
+    margin-left: 15px;
+    background-color: $light;
+  }
+}
+
+main header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 15px 0 15px 0;
+  a {
+    color: $white;
+    padding: 15px;
+    border-radius: 30px;
+    background: $gradian;
+    transition: opacity 0.3s ease;
+  }
+
+  a:hover,
+  a:focus {
+    opacity: 0.8;
+  }
+}
+
+.functioning {
+
+  li {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    background-color: $light;
+    box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    height: 100px;
+  }
+
+  li:hover i,
+  li:focus i {
+    color: $purple;
+  }
+
+  .fa-circle {
+    color: $purple;
+  }
+
+  .numbers {
+    color: $white;
+  }
+}
+
+#restaurants {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 18px;
+
+  li {
+    display: flex;
+    gap: 30px;
+  }
+
+  img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+  }
+
+  figcaption {
+    display: flex;
+    flex-flow: column;
+    place-content: space-evenly;
+    height: 130px;
+    padding: 0 10px 5px 10px;
+    box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.1);
+  }
 }
