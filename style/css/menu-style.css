@@ -1,0 +1,141 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.fa-heart:active {
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  /*essayer d'utiliser type="checkbox" dans le html*/
+}
+
+header h1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Shrikhand", serif;
+  font-size: 5rem;
+}
+
+section {
+  width: 95%;
+  margin: auto;
+}
+
+footer {
+  padding: 25px;
+  background-color: #353535;
+  color: #fff;
+}
+footer h3 {
+  margin: 0 0 16px;
+  font-family: "Shrikhand", serif;
+}
+footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer i {
+  width: 13px;
+  margin-right: 10px;
+}
+footer a {
+  color: #fff;
+}
+
+body {
+  margin: 0;
+}
+
+header img {
+  display: block;
+  max-width: 100%;
+  height: 275px;
+  object-fit: cover;
+}
+header h2, header i {
+  display: inline;
+  font-size: 5rem;
+  margin-left: 25px;
+}
+header h2 {
+  font-family: "Shrikhand", serif;
+  margin-right: 25px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+section h2 {
+  border-radius: 5px;
+  border-width: 5px;
+  border-bottom: 5px;
+  border-color: #99e2d0;
+}
+section ul {
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+section li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  height: 100px;
+}
+section h3 {
+  font-weight: bold;
+  display: block;
+  align-self: flex-start;
+}
+section p {
+  align-self: flex-start;
+}
+section b {
+  align-self: flex-end;
+}
+
+button {
+  width: 186px;
+  align-self: center;
+  color: #fff;
+  padding: 15px;
+  margin: 50px 0 50px 0;
+  border-radius: 30px;
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  transition: opacity 0.3s ease;
+}
+
+button:hover,
+button:focus {
+  opacity: 0.8;
+}
+
+/*# sourceMappingURL=menu-style.css.map */
