@@ -24,7 +24,7 @@ img {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #101010;
 }
 
 .fa-heart:active {
@@ -36,7 +36,6 @@ header h1 {
   display: flex;
   justify-content: center;
   font-family: "Shrikhand", serif;
-  font-size: 5rem;
 }
 
 section {
@@ -66,41 +65,50 @@ footer a {
   color: #fff;
 }
 
-section {
-  width: 95%;
-  margin: auto;
+.btn {
+  color: #fff;
+  padding: 15px;
+  border-radius: 30px;
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  transition: opacity 0.3s ease;
+  border: none;
+  width: 200px;
+  margin: 30px auto;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: 0.8;
 }
 
 form {
   display: flex;
   justify-content: center;
-  background-color: #f3f3f3;
+  background-color: #eaeaea;
   align-items: baseline;
-  padding: 25px 0 25px 0;
+  padding: 25px 0;
+  border-top: solid 1px #353535;
 }
 form input {
   border: 0;
   font-size: 1.2rem;
   margin-left: 15px;
-  background-color: #f3f3f3;
+  background-color: #eaeaea;
 }
 
 main header {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 15px 0 15px 0;
+  padding: 40px;
+  background-color: #f3f3f3;
 }
-main header a {
-  color: #fff;
-  padding: 15px;
-  border-radius: 30px;
-  background: linear-gradient(to top, #9356DC, #FF79DA);
-  transition: opacity 0.3s ease;
+main header h2 {
+  text-align: center;
+  margin: 0;
 }
-main header a:hover,
-main header a:focus {
-  opacity: 0.8;
+main header p {
+  text-align: center;
 }
 
 .functioning li {
@@ -112,7 +120,10 @@ main header a:focus {
   gap: 20px;
   border-radius: 20px;
   margin-bottom: 20px;
-  height: 100px;
+  padding: 20px 0;
+}
+.functioning i {
+  color: #353535;
 }
 .functioning li:hover i,
 .functioning li:focus i {
@@ -125,28 +136,41 @@ main header a:focus {
   color: #fff;
 }
 
-#restaurants {
+[id=restaurants] {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
   gap: 18px;
+  background-color: #f3f3f3;
 }
-#restaurants li {
+[id=restaurants] li {
   display: flex;
   gap: 30px;
 }
-#restaurants img {
+[id=restaurants] a {
+  width: 100%;
+}
+[id=restaurants] figure > p {
+  position: absolute;
+  right: 15%;
+  padding: 5px 10px 5px 10px;
+  color: #008766;
+  background-color: #99e2d0;
+}
+[id=restaurants] img {
   height: 200px;
+  max-width: 100%;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
-#restaurants figcaption {
+[id=restaurants] figcaption {
   display: flex;
   flex-flow: column;
   place-content: space-evenly;
   height: 130px;
   padding: 0 10px 5px 10px;
-  box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.1);
 }
 
 /*# sourceMappingURL=style.css.map */

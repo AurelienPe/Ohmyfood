@@ -37,7 +37,6 @@ header {
     display: flex;
     justify-content: center;
     font-family: 'Shrikhand', serif;
-    font-size: 5rem;
   }
 }
 
@@ -48,7 +47,7 @@ section {
 
 footer {
   padding: 25px;
-  background-color: $grey;
+  background-color: $slate;
   color: $white;
 
   h3 {
@@ -70,4 +69,20 @@ footer {
   a {
     color: $white;
   }
+}
+
+.btn {
+  color: $white;
+  padding: 15px;
+  border-radius: 30px;
+  background: $gradian;
+  transition: opacity 0.3s ease;
+  border: none;
+  width: 200px;
+  margin: 30px auto;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: 0.8;
 }
