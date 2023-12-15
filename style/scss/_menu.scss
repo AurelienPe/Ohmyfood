@@ -3,17 +3,26 @@ body {
 }
 
 header {
+  position: relative;
+
+  h1 {
+    margin: 20px 0 0 0;
+  }
+  .fa-arrow-left {
+    position: absolute;
+    scale: 1.5;
+    left: 10px;
+    top: 15px;
+  } 
 
   img {
     display: block;
     max-width: 100%; 
     height: 275px;
-    object-fit: cover;
   }
 
   h2,i {
     display: inline ;
-    font-size: 5rem;
     margin-left: 25px;
   }
   
@@ -44,41 +53,31 @@ section {
   
   li {
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
-    box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.1);
+    padding: 10px 10px 5px 10px;
+    box-shadow: 1px 10px 10px 5px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
-    height: 100px;
+    height: 69px;
+    margin-bottom: 20px;
   }
   
   h3 {
     font-weight: bold;
     display: block;
     align-self: flex-start;
+    margin: 10px 0 0 0;
   }
 
   p {
     align-self: flex-start;
+    margin-top: 10px;
   }
 
   b {
-    align-self: flex-end;
+    position: absolute;
+    right: 1%;
+    top: 55px;
   }
-}
-
-button {
-  width: 186px;
-  align-self: center;
-  color: $white;
-  padding: 15px;
-  margin: 50px 0 50px 0;
-  border-radius: 30px;
-  background: $gradian;
-  transition: opacity 0.3s ease;
-}
-
-button:hover,
-button:focus {
-  opacity: 0.8;
 }

@@ -26,7 +26,16 @@ a {
   text-decoration: none;
   color: $black;
 }
-  
+
+.fa-heart {
+  scale: 1.5;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 100,
+  'GRAD' -25,
+  'opsz' 40
+}
+
 .fa-heart:active {
   background: $gradian;
   /*essayer d'utiliser type="checkbox" dans le html*/

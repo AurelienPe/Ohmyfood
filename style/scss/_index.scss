@@ -1,3 +1,7 @@
+ul {
+  padding-bottom: 50px;
+}
+
 form {
   display: flex;
   justify-content: center;
@@ -32,8 +36,13 @@ main header {
 }
 
 .functioning {
+  padding-top: 30px;
 
-  li {
+  h2 {
+    padding: 0 0 10px 10px;
+  }
+
+  li {  
     display: flex;
     align-items: center;
     font-weight: bold;
@@ -68,22 +77,32 @@ main header {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  padding-top: 30px;
   width: 100%;
-  gap: 18px;
+  gap: 10px;
   background-color: $light;
+
+  h2{
+    text-align: left;
+  }
 
   li {
     display: flex;
     gap: 30px;
   }
 
-  a{
+  a {
     width: 100%;
   }
 
-  figure > p{
+  figure {
+    position: relative;
+  }
+
+  figure > p {
     position: absolute;
-    right: 15%;
+    right: 5%;
+    top: 15px;
     padding : 5px 10px 5px 10px;
     color: $green;
     background-color: $light-green;
@@ -91,16 +110,28 @@ main header {
 
   img {
     height: 200px;
-    max-width: 100%;
+    width: 95vw;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
+    padding-bottom: 15px;
   }
 
   figcaption {
     display: flex;
+    position: relative;
     flex-flow: column;
-    place-content: space-evenly;
-    height: 130px;
+    height: 80px;
     padding: 0 10px 5px 10px;
+    background-color: $white;
+  }
+
+  h3, p {
+    margin: 0;
+  }
+
+  .fa-heart {
+    position: absolute;
+    right: 10%;
+    top: 10px;
   }
 }
