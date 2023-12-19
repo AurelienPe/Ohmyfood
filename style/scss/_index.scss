@@ -73,17 +73,19 @@ main header {
 }
 
 [id="restaurants"] {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 30px;
+  padding: 30px 20px;
+  box-sizing: border-box;
   width: 100%;
-  gap: 10px;
   background-color: $light;
 
   h2{
     text-align: left;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
   li {
@@ -112,17 +114,19 @@ main header {
     height: 200px;
     width: 95vw;
     object-fit: cover;
-    border-radius: 20px 20px 0 0;
-    padding-bottom: 15px;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: -4px;
   }
 
   figcaption {
     display: flex;
     position: relative;
     flex-flow: column;
-    height: 80px;
-    padding: 0 10px 5px 10px;
+    height: 50px;
+    padding: 15px;
     background-color: $white;
+    border-radius: 0 0 15px 15px;
+    gap: 5px;
   }
 
   h3, p {
@@ -131,8 +135,8 @@ main header {
 
   .fa-heart {
     position: absolute;
-    right: 10%;
-    top: 10px;
+    right: 25px;
+    top: calc(50% - 12px);
   }
 }
 

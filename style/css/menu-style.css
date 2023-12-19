@@ -79,10 +79,7 @@ footer a {
   opacity: 0.8;
 }
 
-@media (min-width: 1024px) {
-  section {
-    width: 80%;
-  }
+@media (min-width: 768px) {
   footer {
     position: relative;
     padding-top: 65px;
@@ -99,6 +96,16 @@ footer a {
   }
   footer li {
     padding-left: 20px;
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 1024px) {
+  section {
+    width: 80%;
+  }
+  footer li {
+    padding-left: 20px;
+    font-size: 1rem;
   }
 }
 body {
