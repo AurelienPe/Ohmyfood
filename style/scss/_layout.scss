@@ -19,7 +19,6 @@ figure {
 img {
   max-width: 100%;
   height: auto;
-  object-fit: contain;
 }
 
 a {
@@ -29,16 +28,6 @@ a {
 
 .fa-heart {
   scale: 1.5;
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 100,
-  'GRAD' -25,
-  'opsz' 40
-}
-
-.fa-heart:active {
-  background: $gradian;
-  /*essayer d'utiliser type="checkbox" dans le html*/
 }
 
 header {
@@ -94,4 +83,45 @@ footer {
 .btn:hover,
 .btn:focus {
   opacity: 0.8;
+}
+
+@media (min-width: 768px) {
+
+  footer {
+    position: relative;
+    padding-top: 65px;
+
+    h3 {
+      position: absolute;
+      right: 5%;
+      bottom: 15%;
+    }
+
+    ul {
+      flex-direction: row;
+      justify-content: flex-end;
+      padding: 0 220px 10px 0;
+    }
+
+    li {
+      padding-left: 20px;
+      font-size: 0.7rem;
+    }
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  section {
+    width: 80%;
+  }
+
+  footer {
+
+    li {
+      padding-left: 20px;
+      font-size: 1rem;
+    }
+  }
 }

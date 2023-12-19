@@ -19,7 +19,6 @@ figure {
 img {
   max-width: 100%;
   height: auto;
-  object-fit: contain;
 }
 
 a {
@@ -27,9 +26,8 @@ a {
   color: #101010;
 }
 
-.fa-heart:active {
-  background: linear-gradient(to top, #9356DC, #FF79DA);
-  /*essayer d'utiliser type="checkbox" dans le html*/
+.fa-heart {
+  scale: 1.5;
 }
 
 header h1 {
@@ -81,6 +79,35 @@ footer a {
   opacity: 0.8;
 }
 
+@media (min-width: 768px) {
+  footer {
+    position: relative;
+    padding-top: 65px;
+  }
+  footer h3 {
+    position: absolute;
+    right: 5%;
+    bottom: 15%;
+  }
+  footer ul {
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0 220px 10px 0;
+  }
+  footer li {
+    padding-left: 20px;
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 1024px) {
+  section {
+    width: 80%;
+  }
+  footer li {
+    padding-left: 20px;
+    font-size: 1rem;
+  }
+}
 ul {
   padding-bottom: 50px;
 }
@@ -199,7 +226,44 @@ main header p {
   position: absolute;
   right: 10%;
   top: 10px;
-  scale: 1.5;
+}
+
+@media (min-width: 768px) {
+  .functioning ul {
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+  }
+  .functioning li {
+    width: 35%;
+    font-size: 0.8rem;
+  }
+  [id=restaurants] ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    gap: 10%;
+  }
+  [id=restaurants] li {
+    width: 45%;
+    margin-bottom: 50px;
+  }
+  [id=restaurants] img {
+    height: 180px;
+  }
+  [id=restaurants] figcaption {
+    height: 50px;
+  }
+}
+@media (min-width: 1024px) {
+  .functioning li {
+    width: 30%;
+    font-size: 0.9rem;
+  }
+  [id=restaurants] ul {
+    width: 80%;
+    gap: 10%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

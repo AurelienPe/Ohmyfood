@@ -135,3 +135,61 @@ main header {
     top: 10px;
   }
 }
+
+@media (min-width: 768px) {
+  .functioning {
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      gap: 3%;
+    }
+
+    li {
+      width: 35%;
+      font-size: 0.8rem;
+    }
+  }
+
+  [id="restaurants"] {
+    
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      width: 95%;
+      gap: 10%;
+    }
+
+    li {
+      width: 45%;
+      margin-bottom: 50px;
+    }
+
+    img {
+      height: 180px;
+    }
+
+    figcaption {
+      height: 50px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .functioning {
+
+    li {
+      width: 30%;
+      font-size: 0.9rem;
+    }
+  }
+  
+  [id="restaurants"] {
+    
+    ul {
+      width: 80%;
+      gap: 10%;
+    }
+  }
+}
