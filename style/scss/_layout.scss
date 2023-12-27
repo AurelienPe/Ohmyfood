@@ -19,6 +19,7 @@ figure {
 img {
   max-width: 100%;
   height: auto;
+  object-fit: cov;
 }
 
 a {
@@ -30,17 +31,34 @@ a {
   scale: 1.5;
 }
 
-header {
-  h1 {
-    display: flex;
-    justify-content: center;
-    font-family: 'Shrikhand', serif;
-  }
+h1 {
+  font-family: 'Shrikhand', serif;
 }
 
 section {
   width: 95%;
   margin: auto;
+}
+
+.fa-heart {
+  position: absolute;
+  color: transparent;
+  transition: all 0.5s ease-in-out;
+  opacity: 100%;
+  background-color: transparent;
+  -webkit-text-stroke: 1px black;
+  right: 40px;
+  top: 92%;
+
+  &:hover {
+    cursor: pointer;
+    background-image: $gradian;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 0;
+    transform: scale(1.1);
+    opacity: 100%;
+  }
 }
 
 footer {
