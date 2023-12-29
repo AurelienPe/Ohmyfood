@@ -55,7 +55,7 @@ main header {
     box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.1);
     gap: 20px;
     border-radius: 20px;
-    margin-bottom: 20px;
+    margin: 0 0 20px 20px;
     padding : 20px 0;
   }
 
@@ -66,6 +66,10 @@ main header {
   li:hover i,
   li:focus i {
     color: $purple;
+  }
+
+  .fa-stack {
+    margin-left: -20px;
   }
 
   .fa-circle {
@@ -139,7 +143,6 @@ main header {
   }
 
   .fa-heart {
-    position: absolute;
     right: 25px;
     top: calc(50% - 12px);
   }
@@ -162,11 +165,17 @@ main header {
 
   [id="restaurants"] {
     
+    h2{
+      margin-left: 3%;
+    }
+
     ul {
       display: flex;
       flex-wrap: wrap;
       width: 95%;
       gap: 10%;
+      flex-direction: row;
+      margin: auto;
     }
 
     li {
@@ -195,10 +204,16 @@ main header {
   }
   
   [id="restaurants"] {
-    
+    padding-top: 10px;
+
+    h2{
+      margin-left: 10%;
+    }
+
     ul {
       width: 80%;
       gap: 10%;
+      padding: 0;
     }
   }
 }
