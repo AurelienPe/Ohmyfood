@@ -40,16 +40,18 @@ section {
   position: absolute;
   scale: 1.5;
   cursor: pointer;
-  color: transparent;
-  transition: background-image 1s ease;
-  background-image: none; 
-  -webkit-text-stroke: 1px black;
+}
 
-  &:hover {
-    background-image: $gradian;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-stroke: 1px $purple;
+.full {
+  opacity: 0;
+  background: $gradian;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: all 3s;
+
+  &:hover, :focus {
+    opacity: 1;
+    color: transparent;
   }
 }
 
