@@ -47,7 +47,7 @@ section {
   background: linear-gradient(to top, #9356DC, #FF79DA);
   -webkit-background-clip: text;
   background-clip: text;
-  transition: all 3s;
+  transition: all 1.5s;
 }
 .full:hover, .full :focus {
   opacity: 1;
@@ -248,7 +248,7 @@ main header p {
   margin: 0;
 }
 [id=restaurants] .fa-heart {
-  right: 25px;
+  right: 30px;
   top: calc(50% - 12px);
 }
 

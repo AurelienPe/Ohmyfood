@@ -51,6 +51,11 @@ main {
   }
 }
 
+article img{
+  height: 275px;
+  width: 100%;
+}
+
 .menu{
   background-color: $light;
 }
@@ -112,12 +117,28 @@ section {
 
 @media (min-width: 768px) {
 
+  article img{
+    height: 325px;
+  }
+
+  section {
+    width: 90%;
+  
+  li {
+    width: 80%;
+    margin: 0 auto 20px auto;
+    }
+  }
 }
 
 @media (min-width: 1024px) {
 
   article {
-    display: contents
+    display: contents;
+
+    img {
+      height: 375px;
+    }
   }
 
   .menu {
@@ -133,4 +154,9 @@ section {
   .fa-heart{
     left: 72%;
   }
+
+  section li {
+    width: 100%;
+  }
+
 }

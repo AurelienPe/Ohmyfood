@@ -122,7 +122,6 @@ main header {
   img {
     height: 200px;
     width: 95vw;
-    object-fit: cover;
     border-radius: 15px 15px 0 0;
     margin-bottom: -4px;
   }
@@ -143,7 +142,7 @@ main header {
   }
 
   .fa-heart {
-    right: 25px;
+    right: 30px;
     top: calc(50% - 12px);
   }
 }

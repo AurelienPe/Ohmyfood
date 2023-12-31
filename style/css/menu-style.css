@@ -47,7 +47,7 @@ section {
   background: linear-gradient(to top, #9356DC, #FF79DA);
   -webkit-background-clip: text;
   background-clip: text;
-  transition: all 3s;
+  transition: all 1.5s;
 }
 .full:hover, .full :focus {
   opacity: 1;
@@ -168,6 +168,11 @@ main header .fa-heart {
   top: 67px;
 }
 
+article img {
+  height: 275px;
+  width: 100%;
+}
+
 .menu {
   background-color: #f3f3f3;
 }
@@ -218,9 +223,24 @@ section b {
   margin-top: 0;
 }
 
+@media (min-width: 768px) {
+  article img {
+    height: 325px;
+  }
+  section {
+    width: 90%;
+  }
+  section li {
+    width: 80%;
+    margin: 0 auto 20px auto;
+  }
+}
 @media (min-width: 1024px) {
   article {
     display: contents;
+  }
+  article img {
+    height: 375px;
   }
   .menu {
     align-self: center;
@@ -232,6 +252,9 @@ section b {
   }
   .fa-heart {
     left: 72%;
+  }
+  section li {
+    width: 100%;
   }
 }
 
