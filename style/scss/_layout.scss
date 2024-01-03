@@ -55,6 +55,25 @@ section {
   }
 }
 
+.btn {
+  color: $white;
+  padding: 15px;
+  border-radius: 30px;
+  background: $gradian;
+  transition: all 0.3s ease;
+  border: none;
+  width: 200px;
+  margin: 30px auto;
+  box-shadow: 2px 2px 5px $grey;
+  text-align: center;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: 0.8;
+  box-shadow: 5px 5px 5px $slate;
+}
+
 footer {
   padding: 25px;
   background-color: $slate;
@@ -63,6 +82,7 @@ footer {
   h3 {
     margin: 0 0 16px;
     font-family: 'Shrikhand', serif;
+    font-weight: 100;
   }
 
   ul {
@@ -80,22 +100,6 @@ footer {
   a {
     color: $white;
   }
-}
-
-.btn {
-  color: $white;
-  padding: 15px;
-  border-radius: 30px;
-  background: $gradian;
-  transition: opacity 0.3s ease;
-  border: none;
-  width: 200px;
-  margin: 30px auto;
-}
-
-.btn:hover,
-.btn:focus {
-  opacity: 0.8;
 }
 
 @media (min-width: 768px) {

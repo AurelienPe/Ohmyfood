@@ -5,13 +5,6 @@ body {
 header {
   position: relative;
 
-  .fa-arrow-left {
-    position: absolute;
-    scale: 1.2;
-    left: 10px;
-    top: 5px;
-  }
-
   img {
     display: block;
     width: 162px;
@@ -20,7 +13,7 @@ header {
 
   h1{
     font-size: 2em;
-    margin: 20px;
+    margin: 0;
   }
 
   h2,i {
@@ -34,6 +27,13 @@ header {
   }
 }
 
+.fa-arrow-left {
+  position: absolute;
+  scale: 1.2;
+  left: 10px;
+  top: 6px;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -42,22 +42,24 @@ main {
     border-radius: 32px;
     background-color: $light;
     margin-top: -32px;
-    padding: 32px 17px 40px;
-
-    .fa-heart {
-      right: 40px;
-      top: 67px;
-    }
+    padding: 32px 15px 40px;
   }
 }
 
-article img{
-  height: 275px;
-  width: 100%;
+.fa-heart {
+  right: 15px;
+  top: 48px;
 }
 
-.menu{
+article {
+  display: flex;
+  flex-flow: column;
   background-color: $light;
+}
+
+main img{
+  height: 275px;
+  width: 100%;
 }
 
 section {
@@ -117,6 +119,13 @@ section {
 
 @media (min-width: 768px) {
 
+  .fa-arrow-left {
+    position: absolute;
+    scale: 1.2;
+    left: 10px;
+    top: 25px;
+  }
+
   article img{
     height: 325px;
   }
@@ -129,34 +138,31 @@ section {
     margin: 0 auto 20px auto;
     }
   }
+
+  header {
+    display: flex;
+    justify-content: center;
+  }
+
+.fa-heart{
+  position: relative;
+  right: 0;
+  top: 24px
+}
 }
 
 @media (min-width: 1024px) {
 
   article {
-    display: contents;
+    width: 75%;
+    margin: auto;
 
     img {
       height: 375px;
     }
   }
 
-  .menu {
-    align-self: center;
-    width: 75%;
-
-    header {
-      display: flex;
-      justify-content: center;
-    }
-  }
-
-  .fa-heart{
-    left: 72%;
-  }
-
   section li {
     width: 100%;
   }
-
 }

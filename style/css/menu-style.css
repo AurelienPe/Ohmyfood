@@ -54,6 +54,25 @@ section {
   color: transparent;
 }
 
+.btn {
+  color: #fff;
+  padding: 15px;
+  border-radius: 30px;
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  transition: all 0.3s ease;
+  border: none;
+  width: 200px;
+  margin: 30px auto;
+  box-shadow: 2px 2px 5px #eaeaea;
+  text-align: center;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: 0.8;
+  box-shadow: 5px 5px 5px #353535;
+}
+
 footer {
   padding: 25px;
   background-color: #353535;
@@ -62,6 +81,7 @@ footer {
 footer h3 {
   margin: 0 0 16px;
   font-family: "Shrikhand", serif;
+  font-weight: 100;
 }
 footer ul {
   display: flex;
@@ -75,22 +95,6 @@ footer i {
 }
 footer a {
   color: #fff;
-}
-
-.btn {
-  color: #fff;
-  padding: 15px;
-  border-radius: 30px;
-  background: linear-gradient(to top, #9356DC, #FF79DA);
-  transition: opacity 0.3s ease;
-  border: none;
-  width: 200px;
-  margin: 30px auto;
-}
-
-.btn:hover,
-.btn:focus {
-  opacity: 0.8;
 }
 
 @media (min-width: 768px) {
@@ -129,12 +133,6 @@ body {
 header {
   position: relative;
 }
-header .fa-arrow-left {
-  position: absolute;
-  scale: 1.2;
-  left: 10px;
-  top: 5px;
-}
 header img {
   display: block;
   width: 162px;
@@ -142,7 +140,7 @@ header img {
 }
 header h1 {
   font-size: 2em;
-  margin: 20px;
+  margin: 0;
 }
 header h2, header i {
   display: inline;
@@ -153,6 +151,13 @@ header h2 {
   margin-right: 25px;
 }
 
+.fa-arrow-left {
+  position: absolute;
+  scale: 1.2;
+  left: 10px;
+  top: 6px;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -161,20 +166,23 @@ main header {
   border-radius: 32px;
   background-color: #f3f3f3;
   margin-top: -32px;
-  padding: 32px 17px 40px;
-}
-main header .fa-heart {
-  right: 40px;
-  top: 67px;
+  padding: 32px 15px 40px;
 }
 
-article img {
+.fa-heart {
+  right: 15px;
+  top: 48px;
+}
+
+article {
+  display: flex;
+  flex-flow: column;
+  background-color: #f3f3f3;
+}
+
+main img {
   height: 275px;
   width: 100%;
-}
-
-.menu {
-  background-color: #f3f3f3;
 }
 
 section h2 {
@@ -224,6 +232,12 @@ section b {
 }
 
 @media (min-width: 768px) {
+  .fa-arrow-left {
+    position: absolute;
+    scale: 1.2;
+    left: 10px;
+    top: 25px;
+  }
   article img {
     height: 325px;
   }
@@ -234,24 +248,23 @@ section b {
     width: 80%;
     margin: 0 auto 20px auto;
   }
-}
-@media (min-width: 1024px) {
-  article {
-    display: contents;
-  }
-  article img {
-    height: 375px;
-  }
-  .menu {
-    align-self: center;
-    width: 75%;
-  }
-  .menu header {
+  header {
     display: flex;
     justify-content: center;
   }
   .fa-heart {
-    left: 72%;
+    position: relative;
+    right: 0;
+    top: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  article {
+    width: 75%;
+    margin: auto;
+  }
+  article img {
+    height: 375px;
   }
   section li {
     width: 100%;

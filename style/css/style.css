@@ -54,6 +54,25 @@ section {
   color: transparent;
 }
 
+.btn {
+  color: #fff;
+  padding: 15px;
+  border-radius: 30px;
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  transition: all 0.3s ease;
+  border: none;
+  width: 200px;
+  margin: 30px auto;
+  box-shadow: 2px 2px 5px #eaeaea;
+  text-align: center;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: 0.8;
+  box-shadow: 5px 5px 5px #353535;
+}
+
 footer {
   padding: 25px;
   background-color: #353535;
@@ -62,6 +81,7 @@ footer {
 footer h3 {
   margin: 0 0 16px;
   font-family: "Shrikhand", serif;
+  font-weight: 100;
 }
 footer ul {
   display: flex;
@@ -75,22 +95,6 @@ footer i {
 }
 footer a {
   color: #fff;
-}
-
-.btn {
-  color: #fff;
-  padding: 15px;
-  border-radius: 30px;
-  background: linear-gradient(to top, #9356DC, #FF79DA);
-  transition: opacity 0.3s ease;
-  border: none;
-  width: 200px;
-  margin: 30px auto;
-}
-
-.btn:hover,
-.btn:focus {
-  opacity: 0.8;
 }
 
 @media (min-width: 768px) {
@@ -230,7 +234,6 @@ main header p {
 [id=restaurants] img {
   height: 200px;
   width: 95vw;
-  object-fit: cover;
   border-radius: 15px 15px 0 0;
   margin-bottom: -4px;
 }
