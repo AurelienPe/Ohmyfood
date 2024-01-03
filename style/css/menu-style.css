@@ -38,7 +38,7 @@ section {
 
 .fa-heart {
   position: absolute;
-  scale: 1.5;
+  font-size: 24px;
   cursor: pointer;
 }
 
@@ -153,9 +153,9 @@ header h2 {
 
 .fa-arrow-left {
   position: absolute;
-  scale: 1.2;
+  font-size: 20px;
   left: 10px;
-  top: 6px;
+  top: 4px;
 }
 
 main {
@@ -171,7 +171,7 @@ main header {
 
 .fa-heart {
   right: 15px;
-  top: 48px;
+  top: 45px;
 }
 
 article {
@@ -234,7 +234,6 @@ section b {
 @media (min-width: 768px) {
   .fa-arrow-left {
     position: absolute;
-    scale: 1.2;
     left: 10px;
     top: 25px;
   }
@@ -255,7 +254,7 @@ section b {
   .fa-heart {
     position: relative;
     right: 0;
-    top: 24px;
+    top: 10px;
   }
 }
 @media (min-width: 1024px) {
