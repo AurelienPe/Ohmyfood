@@ -152,34 +152,47 @@ form input {
 
 .loader {
   display: flex;
-  position: relative;
   width: 100%;
   height: 100%;
   background-color: #fff;
   z-index: 9999;
-  animation: fadeout 3s forwards;
+  animation: fadeout 3s linear forwards;
   justify-content: center;
   align-items: center;
   position: fixed;
-}
-.loader .loader_title {
-  position: relative;
-  background: url(../../images/logo/ohmyfood.png) no-repeat center;
-  animation: title 3s linear forwards;
-  height: 200px;
-  width: 400px;
-}
-.loader .loader_item {
-  position: relative;
-  border-top: black 15px solid;
-  border-radius: 100px;
-  width: 200px;
-  height: 200px;
-  left: 50px;
-  opacity: 1;
-  animation: rotate 2s linear infinite;
+  margin-top: -21px;
 }
 
+.loader_title {
+  position: relative;
+  background: url(../../images/logo/ohmyfood.png) no-repeat center;
+  background-size: 200px 40px;
+  animation: title 3s linear forwards;
+  object-fit: cover;
+  height: 40px;
+  width: 200px;
+}
+
+.loader_item {
+  position: relative;
+  border-top: black 5px solid;
+  border-radius: 100px;
+  width: 50px;
+  height: 50px;
+  left: 50px;
+  opacity: 1;
+  animation: rotate 2s linear;
+}
+
+@keyframes fadeout {
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
 @keyframes title {
   0% {
     opacity: 1;
@@ -188,14 +201,6 @@ form input {
     opacity: 0;
   }
   50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes fadeout {
-  90% {
     opacity: 1;
   }
   100% {
@@ -318,6 +323,15 @@ main header p {
 }
 
 @media (min-width: 768px) {
+  .loader_title {
+    background-size: 250px 50px;
+    height: 50px;
+    width: 250px;
+  }
+  .loader_item {
+    width: 80px;
+    height: 80px;
+  }
   .functioning ul {
     display: flex;
     flex-direction: row;
@@ -350,6 +364,15 @@ main header p {
   }
 }
 @media (min-width: 1024px) {
+  .loader_title {
+    background-size: 300px 60px;
+    height: 60px;
+    width: 300px;
+  }
+  .loader_item {
+    width: 100px;
+    height: 100px;
+  }
   .functioning li {
     width: 30%;
     font-size: 0.9rem;
