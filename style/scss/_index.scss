@@ -23,6 +23,73 @@ form {
   }
 }
 
+.loader{
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: $white;
+  z-index: 9999;
+  animation: fadeout 3s forwards;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+
+  .loader_title {
+    position: relative;
+    background: url(../../images/logo/ohmyfood.png) no-repeat center;
+    animation: title 3s linear forwards;
+    height: 200px;
+    width: 400px;
+  }
+
+  .loader_item {
+    position: relative;
+    border-top: black 15px solid;
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    left: 50px;
+    opacity: 1;
+    animation: rotate 2s linear infinite;
+  }
+}
+
+@keyframes title {
+0% {
+    opacity: 1;
+}
+25% {
+  opacity: 0;
+}
+50% {
+  opacity: 1;
+}
+100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+90% {
+    opacity: 1;
+  }
+100% {
+    opacity: 0;
+  }
+}
+
+@keyframes rotate {
+0% {
+  transform: rotate(0turn);
+  opacity: 1;
+  }
+100% {
+  transform: rotate(1turn);
+  opacity: 1;
+  }
+}
+
 main header {
   display: flex;
   align-items: center;
